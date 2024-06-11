@@ -1,8 +1,33 @@
 package Day1;
+import java.io.*;
+import java.lang.*;
 
+class SearchElementInArray
+{
+    public static void main(String[] args)throws IOException
+    {
+        BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
+        int t = Integer.parseInt(read.readLine());
 
-public class SearchElementInArray {
-    public static int search(int arr[], int N, int X)
+        while(t-- > 0)
+        {
+            int sizeOfArray = Integer.parseInt(read.readLine());
+            int arr[] = new int[sizeOfArray];
+
+            String st[] = read.readLine().trim().split("\\s+");
+            for(int i = 0; i < sizeOfArray; i++)
+                arr[i] = Integer.parseInt(st[i]);
+
+            int x = Integer.parseInt(read.readLine());
+
+            System.out.println(SolutionElementSearch.search(arr, sizeOfArray, x));
+        }
+    }
+}
+
+class SolutionElementSearch {
+
+    static int search(int arr[], int N, int X)
     {
 
         for (int i=0; i<N; i++){
@@ -12,5 +37,7 @@ public class SearchElementInArray {
         }
 
         return -1;
+
     }
+
 }

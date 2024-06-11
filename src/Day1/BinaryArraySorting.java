@@ -1,9 +1,9 @@
+package Day1;
 
-import java.util.*;
 import java.io.*;
 import java.lang.*;
 
-class Sorting
+class BinaryArraySorting
 {
     public static void main(String args[])throws IOException
     {

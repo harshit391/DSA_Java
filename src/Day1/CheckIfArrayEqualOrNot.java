@@ -1,9 +1,7 @@
-
-
-import java.io.*;
+package Day1;
 
 import java.util.*;
-class GFG {
+class CheckIfArrayEqualOrNot {
 	public static void main (String[] args) {
 		Scanner sc=new Scanner(System.in);
 		
@@ -24,7 +22,7 @@ class GFG {
 		  {
 		      brr[i]=sc.nextLong();
 		  }
-		  Solution ob = new Solution();
+		  SolutionCheckifEqual ob = new SolutionCheckifEqual();
 		  System.out.println(ob.check(arr,brr,n)==true?"1":"0");
 		  
 		  
@@ -32,7 +30,7 @@ class GFG {
 	}
 }
 
-class Solution{
+class SolutionCheckifEqual {
     
     public static boolean check(long A[],long B[],int N)
     {

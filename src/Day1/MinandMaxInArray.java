@@ -1,4 +1,5 @@
-import java.util.*;
+package Day1;
+
 import java.lang.*;
 import java.io.*;
 
@@ -12,7 +13,7 @@ class Pair
     }  
 }
 
-class GFG {
+class MinandMaxInArray {
 	public static void main(String[] args) throws IOException
 	{
 	        BufferedReader br =
@@ -29,7 +30,7 @@ class GFG {
                 a[i] = Long.parseLong(inputLine[i]);
             }
             
-            Solution obj = new Solution();
+            SolutionMinMax obj = new SolutionMinMax();
             Pair product = obj.getMinMax(a, n); 
             System.out.println(product.first+" "+product.second);
             
@@ -37,7 +38,7 @@ class GFG {
 	}
 }
 
-class Solution 
+class SolutionMinMax
 {
     static Pair getMinMax(long a[], long n)  
     {

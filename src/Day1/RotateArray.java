@@ -1,9 +1,10 @@
+package Day1;
 
 import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class GFG {
+class RotateArray {
 	public static void main(String[] args) throws IOException
 	{
 	        BufferedReader br =

@@ -1,8 +1,8 @@
+package Day1;
 
 import java.io.*;
-import java.util.*;
 
-public class Main {
+public class MissingElementsInAp {
 
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -17,7 +17,7 @@ public class Main {
                 arr[i] = Integer.parseInt(inputLine[i]);
             }
 
-            int ans = new Solution().findMissing(arr, n);
+            int ans = new SolutionMissingElement().findMissing(arr, n);
             System.out.println(ans);
         }
     }
@@ -25,7 +25,7 @@ public class Main {
 
 
 
-class Solution {
+class SolutionMissingElement {
     int findMissing(int[] arr, int n) {
         int a = arr[0];
         
