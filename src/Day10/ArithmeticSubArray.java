@@ -2,7 +2,7 @@ package Day10;
 
 import java.util.*;
 
-public class ArithmeticSubarray {
+public class ArithmeticSubArray {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
