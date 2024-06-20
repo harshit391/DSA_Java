@@ -23,15 +23,20 @@ public class Test {
     }
 
     public static void main(String[] args) {
-        long[] arr = new long[5];
+//        long[] arr = new long[5];
+//
+//        arr[0] = 4;
+//        arr[1] = 0;
+//        arr[2] = 2;
+//        arr[3] = 1;
+//        arr[4] = 3;
+//
+//        arrange(arr, arr.length);
+//
+//        System.out.println(Arrays.toString(arr));
 
-        arr[0] = 4;
-        arr[1] = 0;
-        arr[2] = 2;
-        arr[3] = 1;
-        arr[4] = 3;
+        int[] arr  = {1, 2, 3, 4};
 
-        arrange(arr, arr.length);
 
         System.out.println(Arrays.toString(arr));
     }
