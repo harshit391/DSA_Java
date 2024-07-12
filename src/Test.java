@@ -35,11 +35,22 @@ public class Test {
 //
 //        System.out.println(Arrays.toString(arr));
 
-        int[] arr  = {1, 2, 3, 4};
+//        int[] arr  = {1, 2, 3, 4};
 
 
-        System.out.println(Arrays.toString(arr));
+//        System.out.println(Arrays.toString(arr));
+
+        StringBuilder sb = new StringBuilder("abc");
+        StringBuilder temp = new StringBuilder(sb);
+
+        System.out.println(sb);
+        System.out.println(temp);
+
+        sb.deleteCharAt(1);
+        System.out.println(sb);
+        System.out.println(temp);
     }
+
 
 
 }
